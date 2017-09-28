@@ -35,10 +35,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
                 .and()
 
-                .formLogin()
+                .formLogin();
                 /*set login form path*/
-                .loginPage("/login")
-                .failureUrl("/login?error=true");
+/*                .loginPage("/login")
+                .failureUrl("/login?error=true");*/
     }
 
     @Override
